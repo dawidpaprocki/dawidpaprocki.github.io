@@ -36,7 +36,7 @@ header{
 .logo{
   height: 80px;
   width: 150px;
-  background-image: url("img/logo.png");
+  background-image: url("img/Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
