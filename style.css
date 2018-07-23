@@ -10,7 +10,7 @@ header{
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: auto;
+  background-size: cover;
 }
 .container-fluid{
     padding: 0px;
