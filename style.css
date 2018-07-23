@@ -1,0 +1,185 @@
+html, body{
+    margin:0;
+    padding:0;
+    min-width: 100%;
+}
+
+header{
+
+  background-image: url('img/header.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: auto;
+}
+.container-fluid{
+    padding: 0px;
+}
+    /* flex-wrap: wrap; */
+.menu{
+  width: 42%;  float: right;
+  margin-top: 1%;
+  margin-bottom: 0px;
+  right: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 15px;
+  margin-right: 5%;
+  transition-duration:0.5s;
+}
+.menuscroll{
+  margin-top: 0px;
+}
+
+
+.logo{
+  height: 80px;
+  width: 150px;
+  background-image: url("img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 1%;
+  margin-left: 10%;
+  transition-duration:0.5s;
+}
+.logoscroll{
+  margin-top: 0%;
+  height: 65px;
+  width: 120px;
+
+}
+
+.menu-link{
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  list-style: none;
+  padding: 0.75em;
+  float: right;
+}
+
+h1{
+ font-size: 2em;
+ color: black;
+}
+
+.fullboxmeu{ width: 100%; height: 80px; position: fixed; background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+
+
+}
+.fullboxmeuscroll{
+background-color: rgba(255, 255, 255, 0.68);
+transition-duration:0.6s;
+height: 65px;
+-webkit-box-shadow: 2px 4px 13px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 4px 13px -6px rgba(0,0,0,0.75);
+box-shadow: 2px 4px 13px -6px rgba(0,0,0,0.75);
+}
+.fullbox{ min-width: auto; min-height: 500px;
+}
+.halfbox{ width: 50%; height: 100px;)
+}
+
+.halboxleft{float: left; background-color: rgb(191, 255, 0)
+}
+.halboxright{float: right; background-color: rgb(153, 48, 232);
+  position: fixed; transition: .5s;
+}
+
+.quarterbox{ width: 70%; height: 80px;margin-left: 15%; margin-right: 15%;
+}
+
+.logobox{width: 50%; float: left;
+}
+
+.quarterboxright{width: 42%;  float: right; background-color: rgb(81, 146, 232);)
+}
+.contentboxgrey{
+background-color: #f5f6fa;
+width: 100%;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+}
+.contentboxwhite{
+width: 100%;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+
+}
+.paralax{
+  background-image: url("img/servers.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.center{
+   text-align: center;
+}
+
+.icon{
+  height: 60px;
+  width: 60px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom:  10%;
+}
+.service{
+  background-image: url("img/icon/customer-service.png");
+}
+.linechart{
+  background-image: url("img/icon/line-chart.png");
+}
+.scheme{
+  background-image: url("img/icon/scheme.png");
+}
+.settings{
+  background-image: url("img/icon/settings.png");
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+    flex-direction: row;
+}
+.h2, h2 {
+    font-size: 1.5rem;
+}
+.margintop{
+  margin-top: 30px;
+}
+.container{
+  margin-top: 30px;
+}
+
+
+#navigation a:hover{
+    text-decoration: none;
+    color: #ff0000;
+
+
+}
+#navigation ul{
+    margin:0; padding:0;
+    list-style:none;
+}
+#navigation ul li{
+    display:inline-block;
+}
+#navigation ul li a{
+
+    padding:0 10px;
+    color:#000000;
+
+}
+
+#navigation ul li a.active{
+    color:#ff0000;
+}
