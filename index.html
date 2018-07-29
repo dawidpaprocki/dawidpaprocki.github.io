@@ -7,6 +7,7 @@
       <link href="reset.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+      <link href="Contact.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
     <main>
@@ -17,7 +18,7 @@
             <div class="fullboxmeu" id="fullboxmeu">
             <nav id="navigation" class="menu-link menu">
              <ul>
-                  
+
                  <li><a href="#section1">Section 1</a></li>
                  <li><a href="#section2" >Section 2</a></li>
                  <li><a href="#section3">Section 3</a></li>
@@ -36,13 +37,13 @@
           </header>
 
 
-          <div class="contentboxwhite" id="section1">
+          <div class="contentboxgrey" id="section1">
             Sekcja pierwsza
 
 
 
           </div>
-          <div class="contentboxgrey" id="section2">
+          <div class="contentboxwhite" id="section2">
             <div class="container margintop">
               <div class="row row-50 justify-content-center justify-content-lg-between">
                 <div class="col-md-10 col-lg-6 col-xl-5">
@@ -89,10 +90,48 @@
               </div>
             </div>
           </div>
-<div class="contentboxgrey" id="section2">
-  Sekcja druga
-</div>
+<!-- <div class="contentboxwhite" id="section2">
+  Sekcja czwarta
+</div> -->
+  <footer >
+    <!-- <div class="row"> -->
+      <div class=" col-sm ">
+        <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+            <div class="form-row">
+                <label for="field-name">Name*</label>
+                <input value="marcin" type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+                <label for="field-email">Email*</label>
+                <input value="email@wp.plp" type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+                <label for="field-message">Message*</label>
+                <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+">dasdasdsad</textarea>
+            </div>
+            <div class="form-row">
+                <label class="checkbox-cnt">
+                    <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+                    <i class="state" aria-hidden="true"></i>
+                    <span>Wyrażam zgodę na używanie przez Trust IT Sp. z.o.o., z siedzibą przy ul. Wróblewskiego 18/103, 93-578 Łódź, telekomunikacyjnych urządzeń końcowych, których jestem użytkownikiem, dla celów marketingu bezpośredniego zgodnie z art. 172 ustawy z dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz.U. 2004 nr 171 poz. 1800).*</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
 
+        </form>
+      </div>
+        <div class="col-sm">
+          <div class="block">
+          <span class="contact1">Zadzwoń</span> <span class="contact2">12 234 56 78</span>
+          </div>
+        </div>
+
+    <!-- </div> -->
+  </footer>
       </section>
     </main>
 
@@ -103,5 +142,6 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
     <script src="js.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
