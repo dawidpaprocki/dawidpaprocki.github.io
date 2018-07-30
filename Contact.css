@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .form {
-    margin:3rem auto;
+    margin:1rem auto;
     font-family:sans-serif;
     max-width:40rem;
 }
@@ -27,7 +27,7 @@
     border:1px solid #aaa;
     display: block;
     width:100%;
-    color:#666;
+    color: #dedede;
 }
 .form input[type=text]:focus,
 .form input[type=email]:focus,
@@ -44,6 +44,7 @@
     display: block;
     font-size:0.9rem;
     margin-bottom:0.5rem;
+    color: #dedede;
 }
 .form .submit-btn {
     font-family: sans-serif;
@@ -66,7 +67,7 @@
     font-weight: normal;
     font-size:0.85rem;
     line-height: 1.1rem;
-    color:#444;
+    color:#fff;
     cursor: pointer;
 }
 .form .checkbox-cnt .state {

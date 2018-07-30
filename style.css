@@ -2,6 +2,7 @@ html, body{
     margin:0;
     padding:0;
     min-width: 100%;
+        font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -15,28 +16,62 @@ header{
 .container-fluid{
     padding: 0px;
 }
+.divide{
+  width: 35%;
+  border-top: 1px solid #cb1212;
+  margin-left: 32.5%;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #cb1212;
+  margin: auto;
+  margin-bottom: 2rem;
+}
     /* flex-wrap: wrap; */
 .menu{
-  width: 42%;  float: right;
-  margin-top: 1%;
-  margin-bottom: 0px;
+  float: right;
   right: 0;
   padding: 10px;
   text-transform: uppercase;
   border: 0;
   font-size: 15px;
-  margin-right: 5%;
+  margin-right: 20%;
   transition-duration:0.5s;
+  margin-top: 1%;
 }
 .menuscroll{
   margin-top: 0px;
 }
 /* footer{
-  height: 300px;
-  background-color: grey;
+  height: auto;
+
+} */
+p{
+  color: #5f5f61;
+}
+#benefits P{
+  text-align: center;
+  font-size: 1.75rem;
+  /* font-weight: bold; */
+  margin-bottom: 2rem;
+}
+#section2 .arrow-down{
+  margin-bottom: 4rem;
+}
+#section2 .row{
+  margin-top: 4rem;
+}
+/* #section3 .contentboxgrey{
+  height: auto;
 } */
 
-
+h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .logo{
   height: 80px;
   width: 150px;
@@ -45,7 +80,7 @@ header{
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: 1%;
-  margin-left: 10%;
+  margin-left: 10em;
   transition-duration:0.5s;
 }
 .logoscroll{
@@ -95,13 +130,13 @@ box-shadow: 2px 4px 13px -6px rgba(0,0,0,0.75);
 .quarterbox{ width: 70%; height: 80px;margin-left: 15%; margin-right: 15%;
 }
 
-.logobox{width: 50%; float: left;
+.logobox{ float: left;
 }
 
 .quarterboxright{width: 42%;  float: right; background-color: rgb(81, 146, 232);)
 }
 .contentboxgrey{
-background-color: #d7d7d7;
+
 width: 100%;
 height: 400px;
 display: flex;
@@ -109,17 +144,32 @@ flex-wrap: wrap;
 }
 .contentboxwhite{
 width: 100%;
-height: 400px;
+height: 450px;
 display: flex;
 flex-wrap: wrap;
-
 }
+.contentboxwhite2{
+margin-top: 5%;
+margin-bottom: 5%;
+width: 100%;
+height:auto;
+display: flex;
+flex-wrap: wrap;
+}
+
 footer{
-  background-color: #d7d7d7;
+  background-color: #3b3e42 ;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   float: left;
+}
+footer p{
+margin-bottom: 0rem;
+color: #dedede;
+}
+.footer1{
+  padding-top: 2rem;
 }
 .block{
   margin: 3rem 5rem;
@@ -130,9 +180,10 @@ footer{
 }
 .contact1{
   font-size: 26px;
-  color: #adadad;
+  color: #dedede;
   font-weight: bold;
 }
+
 .contact2{
   margin-left: 5px;
   font-size: 26px;
@@ -147,9 +198,12 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+  z-index: 1;
+  margin: auto;
 }
 .center{
-   text-align: center;
+   padding-left: 2%;
+   padding-right: 2%;
 }
 
 .icon{
@@ -158,8 +212,7 @@ footer{
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
-  margin-top: 10%;
+  /* margin: 0 auto; */
   margin-bottom:  10%;
 }
 .service{
@@ -181,22 +234,17 @@ footer{
 }
 .h2, h2 {
     font-size: 1.5rem;
+    text-align: left;
 }
 .margintop{
   margin-top: 30px;
 }
 .container{
-  margin-top: 30px;
-}
-
-
-#navigation a:hover{
-    text-decoration: none;
-    color: #ff0000;
-
+  margin: auto;
+  padding: auto;
 
 }
-#navigation ul{
+ ,on ul{
     margin:0; padding:0;
     list-style:none;
 }
@@ -204,12 +252,44 @@ footer{
     display:inline-block;
 }
 #navigation ul li a{
-
+    font-size: 110%;
+    font-weight: bold;
     padding:0 10px;
-    color:#000000;
+    color:#2b2b2b;
+        font-family: 'Open Sans', sans-serif;
+
 
 }
 
 #navigation ul li a.active{
     color:#ff0000;
+
+
 }
+
+#navigation ul li a:hover{
+    color:#ff0000;
+  text-decoration: none;
+
+}
+#benefits ul {
+    /* list-style-image: url('img/resize.png'); */
+}
+#benefits li {
+  background: url('img/check-mark-3-24.png') no-repeat left top; /* <-- change `left` & `top` too for extra control */
+   padding: 3px 0px 3px 6%;
+   /* reset styles (optional): */
+   list-style: none;
+   margin: 0;
+       font-family: 'Open Sans', sans-serif;
+       color: #5f5f61;
+}
+
+
+
+/* ul {
+    list-style-image: url('img/resize.png');
+}
+li{
+        padding-bottom: 0;
+} */
