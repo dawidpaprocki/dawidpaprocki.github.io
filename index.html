@@ -11,10 +11,12 @@
   <link href="Contact.css" rel="stylesheet" type="text/css" media="all">
   <link href="Animate.css" rel="stylesheet" type="text/css" media="all">
   <link href="test.css" rel="stylesheet" type="text/css" media="all">
+
   <link href="hamburger.css" rel="stylesheet" type="text/css" media="all">
+      <link href="progressbar.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
-<body>
+<body onload="init()">
   <main>
     <section class="container-fluid">
 
@@ -22,7 +24,7 @@
 
         <div class="fullboxmeu" id="fullboxmeu">
           <div class="hamburger logobox" id="hamburger" onclick="myFunction()">
-            <!-- <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a> -->
+
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -36,7 +38,7 @@
           <div id="navigation" class="menu menu-link">
 
 
-            <div >
+            <div>
               <ul class="topnav" id="myTopnav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">O Nas</a></li>
@@ -62,21 +64,59 @@
       <div class="contentboxwhite" id="section1">
         <div class="container">
           <div class="row row-50 justify-content-center justify-content-lg-between">
-            <div class="col-md-6 col-lg-6 col-xs-6 animated fadeInLeft" id="benefits">
-              <h3>  Korzyści Outsourcing IT </h3>
-              <ul>
-                <li>Zmniejszone koszty operacyjne</li>
-                <li>Dostęp do nowoczesnych technologi</li>
-                <li>Kompleksowa usługa</li>
-                <li>Nieustane wsparcie informatyczne</li>
-                <li>Szybsze wprowadzanie innowacji w firmie</li>
-                <li>Specjalistyczna wiedza oraz doświadczenie</li>
-                <li>Bezpieczeństwo danych</li>
+            <div class="col-md-6 col-lg-6 col-xs-6 animated zoomIn" id="about">
+              <h3>  O NAS </h3>
+  <p>           <img src="img/Logo.png" alt="OutSourcing IT"  height="80" width="140" style="float:left; margin:0.4rem"  >  już<b> od 7 lat specjalizuje się w kompleksowym wsparciu informatycznym przedsiębiorstw.</b>
+              Naszym przesłaniem jest całościowe podejście do oczekiwań i zadań stawianych nam przez naszych Klientów.</p>
 
-              </ul>
+        <p>  Zapewniamy przedsiębiorstwom pełną<b> opiekę informatyczną realizowaną w modelu outsourcingowym.</b>
+           Naszym celem jest zabezpieczenie ciągłości pracy oraz bezpieczeństwa systemów informatycznych Klienta.</p>
             </div>
             <div class="col-md-6 col-lg-6 col-xs-6">
-              <img class="img-responsive" src="img/header2.jpg" alt="" width="560" height="340">
+              <main>
+  <div class="main-content">
+    <div id="example-1" class="examples">
+      <div class="cssProgress">
+        <div class="progress1">
+          <div class="cssProgress-bar" data-percent="75" style="width: 75%;">
+            <span class="cssProgress-label first75" >75%</span>
+          </div>
+        </div>
+      </div>
+      <div class="cssProgress">
+        <div class="progress1">
+          <div class="cssProgress-bar" data-percent="65" style="width: 65%;">
+            <span class="cssProgress-label">65%</span>
+          </div>
+        </div>
+      </div>
+      <div class="cssProgress">
+        <div class="progress1">
+          <div class="cssProgress-bar" data-percent="55" style="width: 55%;">
+            <span class="cssProgress-label">55%</span>
+          </div>
+        </div>
+      </div>
+      <div class="cssProgress">
+        <div class="progress1">
+          <div class="cssProgress-bar" data-percent="45" style="width: 45%;">
+            <span class="cssProgress-label">45%</span>
+          </div>
+        </div>
+      </div>
+      <div class="cssProgress">
+        <div class="progress1">
+          <div class="cssProgress-bar" data-percent="35" style="width: 35%;">
+            <span class="cssProgress-label">35%</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- @end #example-1 -->
+</main><!-- @end main -->
+
+
+              <!-- <img class="img-responsive" src="img/header2.jpg" alt="" width="580" height="350"> -->
             </div>
           </div>
         </div>
@@ -211,8 +251,6 @@
     </section>
   </main>
 
-
-
   <script src="js/bootstrap.min.js"></script>
   <script src="outdatedbrowser.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -220,6 +258,7 @@
   <script src="js.js"></script>
   <script src="js2.js"></script>
   <script src="scripts.js"></script>
+    <script src="Scroll.js"></script>
 </body>
 
 </html>

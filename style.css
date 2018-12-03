@@ -2,17 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
   min-width: 100%;
-  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  background:
-  linear-gradient(
-         rgba(0, 0, 0, 0.6),
-         rgba(0, 0, 0, 0.6)
-       ),
-   url('img/servers.jpg');
-  background-attachment: fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/servers.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,19 +36,15 @@ header {
 /* flex-wrap: wrap; */
 
 .menu {
-
-
   right: 0;
   text-transform: uppercase;
   border: 0;
   font-size: 15px;
-
   transition-duration: 0.5s;
-        background-color: rgba(255, 255, 255, 0.93);
-        -webkit-box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
-
+  background-color: rgba(255, 255, 255, 0.93);
+  -webkit-box-shadow: 0px 5px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 13px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 13px -6px rgba(0, 0, 0, 0.75);
 }
 
 .menuscroll {
@@ -90,20 +79,18 @@ p {
   height: auto;
 } */
 
-h3 {
-  text-align: center;
+h3 {font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
 .logo {
-
   height: 80px;
   width: 150px;
   background-image: url("img/Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-
   margin-left: 10em;
   transition-duration: 0.5s;
 }
@@ -114,16 +101,14 @@ h3 {
   width: 120px;
 }
 
-.menu-link {display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+.menu-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 1px;
   list-style: none;
-
-
 }
 
 h1 {
@@ -133,7 +118,7 @@ h1 {
 
 .fullboxmeu {
   width: 100%;
-  height:80px;
+  height: 80px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.70);
   z-index: 1;
@@ -187,8 +172,7 @@ h1 {
 }
 
 .logobox {
-   z-index: 100;
-
+  z-index: 100;
 }
 
 .quarterboxright {
@@ -203,7 +187,7 @@ h1 {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color:rgb(250, 250, 250);
+  background-color: rgb(250, 250, 250);
 }
 
 .contentboxwhite {
@@ -259,17 +243,6 @@ footer p {
   font-weight: bold;
 }
 
-.paralax {
-  background-image: url("img/servers.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  z-index: 1;
-  margin: auto;
-}
-
 .center {
   padding-left: 2%;
   padding-right: 2%;
@@ -306,12 +279,9 @@ footer p {
   flex-direction: row;
 }
 
-@media screen and (max-width: 2000px) {
-
-}
+@media screen and (max-width: 2000px) {}
 
 .h2, h2 {
-
   font-size: 1.5rem;
   text-align: left;
 }
@@ -332,15 +302,11 @@ footer p {
 }
 
 #navigation ul li {
-
   display: inline-block;
-
 }
 
 #navigation ul li a {
-
-
-      margin-top: 1rem;
+  margin-top: 1rem;
   font-weight: bold;
   padding: 0 10px;
   color: #2b2b2b;
@@ -354,6 +320,22 @@ footer p {
 #navigation ul li a:hover {
   color: #ff0000;
   text-decoration: none;
+}
+
+#about {
+  text-align: justify;
+  letter-spacing: 0.04rem;
+  font-size: 1rem;
+  color: #7a7a7a;
+  font-weight: 400;
+}
+
+#ff9900
+#about p {
+  margin-bottom: 1%;
+}
+#about b {
+  color: #ff9900;
 }
 
 #benefits ul {
