@@ -72,3 +72,24 @@ $(document).ready(function() {
   }
 
 }(jQuery));
+
+
+
+(function(){
+
+  var parallax = document.querySelectorAll(".content-box-empty"),
+      speed = 0.1;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "0" + (-((windowYOffset-1800) * speed))  + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+
+    });
+  };
+
+})();

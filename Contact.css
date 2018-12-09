@@ -27,7 +27,7 @@
     border:1px solid #aaa;
     display: block;
     width:100%;
-    color: #dedede;
+   background-color: rgba(0, 0, 0, 0.52);
 }
 .form input[type=text]:focus,
 .form input[type=email]:focus,
@@ -67,7 +67,7 @@
     font-weight: normal;
     font-size:0.85rem;
     line-height: 1.1rem;
-    color:#fff;
+
     cursor: pointer;
 }
 .form .checkbox-cnt .state {
