@@ -105,13 +105,27 @@ h2 {
   letter-spacing: 1px;
 }
 
+.col-left{
+  margin-right: 2%;
+}
+.col-right{
+  padding-top: 1%;
+  margin-left: 2%;
+}
 .thumb {
   float: left;
-  font-size: 46px;
   color: #3798d9;
   text-align: center;
   width: 60px;
   font-size: 2.9rem;
+}
+
+.thumb-small {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  width: 30px;
+  font-size: 0.9rem;
 }
 
 a:hover {
@@ -138,6 +152,16 @@ h4 {
   text-align: left;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+footer h4{
+
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+        padding-left: 0px;
+}
+footer h4::first-letter{
+  color:   #3798d9;
+
 }
 
 .col-sm a:hover {
@@ -318,20 +342,26 @@ h4 {
 }
 
 footer {
-  background-color: #3b3e42;
+color: #CCC;
+  background-color: #282828;
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  float: left;
 }
 
 footer p {
-  margin-bottom: 0rem;
-  color: #dedede;
+    color: #CCC;
+    font-size: 0.9rem;
+}
+p{
+  color: #ffffff;
+
 }
 
-.footer1 {
-  padding-top: 2rem;
+.certificate{
+  padding: 20px;
+    background-image: url("img/rzetelnafirma.png");
 }
 
 .block {

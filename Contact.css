@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 .form {
+  color: #ffffff;
     margin:1rem auto;
-    font-family:sans-serif;
+font-family: 'Open Sans', sans-serif;
     max-width:40rem;
 }
 .form .form-row {
@@ -21,8 +22,9 @@
 .form input[type=text],
 .form input[type=email],
 .form textarea {
+    color: #ffffff;
     border-radius:0.2rem;
-    font-family:sans-serif;
+font-family: 'Open Sans', sans-serif;
     padding:0.8rem;
     border:1px solid #aaa;
     display: block;
@@ -40,14 +42,14 @@
     height:8rem;
 }
 .form label {
-    font-weight:bold;
+
     display: block;
     font-size:0.9rem;
     margin-bottom:0.5rem;
-    color: #dedede;
+    /* color: #dedede; */
 }
 .form .submit-btn {
-    font-family: sans-serif;
+font-family: 'Open Sans', sans-serif;
     padding:0.5rem 1rem;
     background: #F15C5C;
     border:0;
@@ -154,18 +156,17 @@
 }
 .form .send-error {
     display:inline-block;
-    font-family: sans-serif;
+font-family: 'Open Sans', sans-serif;
     font-size:0.9rem;
     padding:1rem 1.5rem;
     color:#E01546;
 }
 .form-send-success {
-    font-family: sans-serif;
+font-family: 'Open Sans', sans-serif;
     text-align:center;
     font-size:2rem;
     font-weight:bold;
     border:1px solid #eee;
-    color:#333;
     padding:10rem 0;
     margin:3rem auto;
     max-width:40rem;
@@ -176,7 +177,6 @@
 }
 .form-send-success span {
     font-size:1rem;
-    color:#888;
     font-weight:normal;
     display: block;
 }
