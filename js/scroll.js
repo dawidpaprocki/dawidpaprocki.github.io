@@ -60,12 +60,10 @@ function SmoothScroll(target, speed, smooth) {
 ## Back to top button
 --------------------------------------------------------------*/
 (function() {
-  console.log("??");
   var parallax = document.querySelectorAll(".content-box-parallax"),
     speed = 0.1;
 
   window.onscroll = function() {
-    console.log("??");
     [].slice.call(parallax).forEach(function(el, i) {
 
       var windowYOffset = window.pageYOffset,
