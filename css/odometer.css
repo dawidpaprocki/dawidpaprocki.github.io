@@ -1,3 +1,13 @@
+.odometer-text {
+  transform: scaleY(1.1);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 15px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
 .odometer.odometer-auto-theme, .odometer.odometer-theme-default {
 
   vertical-align: middle;

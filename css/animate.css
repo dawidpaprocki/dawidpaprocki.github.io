@@ -1374,9 +1374,39 @@
 }
 
 .fadeIn {
+
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+
+@-webkit-keyframes fadeInSlider {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlider {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInSlider {
+
+  -webkit-animation-name: fadeInSlider;
+  animation-name: fadeInSlider;
+}
+
+
 
 @-webkit-keyframes fadeInDown {
   from {
@@ -1473,6 +1503,7 @@
 }
 
 .fadeInLeft {
+      z-index: 10;
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -1605,6 +1636,7 @@
 }
 
 .fadeInUp {
+
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }

@@ -1,17 +1,51 @@
-setTimeout(function(){
-    odometer1.innerHTML = 560;
-}, 1000);odometer2
-setTimeout(function(){
-    odometer2.innerHTML = 450;
-}, 1000);
-setTimeout(function(){
-    odometer3.innerHTML = 21;
-}, 1000);
-setTimeout(function(){
-    odometer4.innerHTML = 10;
-}, 1000);
+function isScrolledIntoView(elem) {
+  // Declare variable for top of viewport
+  var TopViewPort = $(window).scrollTop();
+  // Declare variable for bottom of viewport
+  var BotViewPort = TopViewPort + $(window).height();
+  // Declare Bot = Top + viewport
+  var TopOfElement = $(elem).offset().top;
+  // Get coordinates of element relative to the document.
+  var BotOfElement = TopOfElement + $(elem).height();
+  return ((BotOfElement <= BotViewPort) && (TopOfElement >= TopViewPort));
+}
+// Now to add the functions once viewport is active
+$(window).scroll(function() {
+  $('.what-we-do').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      $(this).addClass('animated fadeInLeft')
+    }
+  });
+  $('.hidden-to-animate, .under-text').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      $(this).addClass('animated fadeInUp')
+    }
+  });
+  Odometer.init();
+  $('.hidden-to-animate-top').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      $(this).addClass('animated fadeInDown')
+    }
+  });
+  $('.odometer').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      setTimeout(function() {
+        odometer1.innerHTML = 560;
+      }, 00);
+      odometer2
+      setTimeout(function() {
+        odometer2.innerHTML = 450;
+      }, 400);
+      setTimeout(function() {
+        odometer3.innerHTML = 21;
+      }, 600);
+      setTimeout(function() {
+        odometer4.innerHTML = 10;
+      }, 800);
+    }
+  });
 
-
+});
 
 (function() {
   var COUNT_FRAMERATE, COUNT_MS_PER_FRAME, DIGIT_FORMAT, DIGIT_HTML, DIGIT_SPEEDBOOST, DURATION, FORMAT_MARK_HTML, FORMAT_PARSER, FRAMERATE, FRAMES_PER_VALUE, MS_PER_FRAME, MutationObserver, Odometer, RIBBON_HTML, TRANSITION_END_EVENTS, TRANSITION_SUPPORT, VALUE_HTML, addClass, createFromHTML, fractionalPart, now, removeClass, requestAnimationFrame, round, transitionCheckStyles, trigger, truncate, wrapJQuery, _jQueryWrapped, _old, _ref, _ref1,
@@ -553,7 +587,9 @@ setTimeout(function(){
         } else {
           frames = (function() {
             _results = [];
-            for (var _j = start; start <= end ? _j <= end : _j >= end; start <= end ? _j++ : _j--){ _results.push(_j); }
+            for (var _j = start; start <= end ? _j <= end : _j >= end; start <= end ? _j++ : _j--) {
+              _results.push(_j);
+            }
             return _results;
           }).apply(this);
         }

@@ -1,4 +1,10 @@
-{
+/*--------------------------------------------------------------
+## Contact form
+--------------------------------------------------------------*/
+var path = window.location.pathname;
+var page = path.split("/").pop();
+
+if(page === "index.html"){
     const form = document.querySelector('#contactForm');
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
 
@@ -125,4 +131,121 @@
             });
         }
     });
+}
+
+/*--------------------------------------------------------------
+## Mobile menu - 'Hamburger'
+--------------------------------------------------------------*/
+
+function myHamburger() {
+  var hamburgerid = document.getElementById("hamburger");
+  hamburgerid.classList.toggle("change");
+
+  var elemetid = document.getElementById("myTopnav");
+  var elemetidmenu = document.getElementById("navigation");
+
+  if (elemetid.className === "topnav" || elemetid.className === "topnav mobile") {
+    elemetid.classList.add("responsive");
+  } else {
+    elemetid.classList.remove("responsive");
+  }
+
+  if (elemetidmenu.className == "menu menu-link") {
+    elemetidmenu.classList.add("responsive");
+  } else {
+    elemetidmenu.classList.remove("responsive");
+  }
+}
+
+/*--------------------------------------------------------------
+## Progress bars
+--------------------------------------------------------------*/
+$(document).ready(function() {
+
+  $('#example-1').progress_fnc();
+
+});
+
+(function($) {
+
+  $.fn.progress_fnc = function(options) {
+    var settings = $.extend({
+      type: 'start'
+    }, options);
+
+    var div = $(this);
+    var progress = div.find('.cssProgress');
+
+    progress.each(function() {
+      var self = $(this);
+      var progress_bar = self.find('.cssProgress-bar');
+      var progress_label = self.find('.cssProgress-label, .cssProgress-label2');
+      var label_move = self.find('.first75');
+      var progress_value = progress_bar.data('percent');
+      var percentage = parseInt(progress_value, 10) + '%';
+
+      progress_bar.css({
+        'width': '0%',
+        'transition': 'none',
+        '-webkit-transition': 'none',
+        '-moz-transition': 'none'
+      });
+
+      if (settings.type == 'start') {
+
+
+        progress_bar.animate({
+          width: percentage
+        }, {
+          duration: 1000,
+          step: function(x) {
+            progress_label.text(Math.round(x) + '%');
+
+          }
+        });
+
+      }
+
+    });
+  }
+
+}(jQuery));
+
+/*--------------------------------------------------------------
+## slideshow
+--------------------------------------------------------------*/
+
+var topSliderIndex = 0;
+slider();
+function slider() {
+  var i;
+  var x = document.getElementsByClassName("headers");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';
+  }
+  topSliderIndex++;
+  if (topSliderIndex > x.length) {
+    topSliderIndex = 1
+  }
+  x[topSliderIndex - 1].style.display = 'block';
+  setTimeout(slider, 3000);
+}
+
+function plusDivs(n) {
+  showDivs(myIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("headers");
+  if (n > x.length) {
+    myIndex = 1
+  }
+  if (n < 1) {
+    myIndex = x.length
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[myIndex - 1].style.display = "block";
 }

@@ -1,9 +1,12 @@
 <?php
 error_reporting(0);
 
-$mailToSend = 'twoj-email@lorem.pl';
-
+$mailToSend = 'dawidsrel@gmail.com';
+$ip = $_SERVER['REMOTE_ADDR'];
+$wininfo  = $_SERVER['HTTP_USER_AGENT'];
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
+	$ip         = $_SERVER['REMOTE_ADDR'];
+	$wininfo    = $_SERVER['HTTP_USER_AGENT'];
 	$name       = $_POST['name'];
 	$email      = $_POST['email'];
 	$message    = $_POST['message'];
@@ -42,6 +45,8 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 				.msg-title {margin-top:30px;}
 			</style>
 			<body>
+			<div>Ip: 	$ip </div>
+			<div>Informacje: 	$wininfo </div>
 			<div>Imię: <strong>$name</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>
