@@ -16,17 +16,26 @@ $(window).scroll(function() {
       $(this).addClass('animated fadeInLeft')
     }
   });
+
   $('.hidden-to-animate, .under-text').each(function() {
     if (isScrolledIntoView(this) === true) {
       $(this).addClass('animated fadeInUp')
     }
   });
-  Odometer.init();
+
   $('.hidden-to-animate-top').each(function() {
     if (isScrolledIntoView(this) === true) {
       $(this).addClass('animated fadeInDown')
     }
   });
+
+  $('.hidden-to-animate-top-contact').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      $(this).addClass('animated fadeInDown')
+    }
+  });
+
+  Odometer.init();
   $('.odometer').each(function() {
     if (isScrolledIntoView(this) === true) {
       setTimeout(function() {

@@ -4,6 +4,7 @@ html, body {
   min-width: 100%;
   color: rgb(68, 68, 68);
   font-family: 'Open Sans', sans-serif;
+
 }
 
 p {
@@ -69,6 +70,11 @@ h5 {
   padding: 0px;
 }
 
+.container-menu{
+   overflow: hidden;
+  margin: auto auto;
+    overflow-x: hidden;
+}
 .content-box-grey {
   width: 100%;
   height: auto;
@@ -85,7 +91,7 @@ h5 {
 }
 
 .container-mrgin {
-  width: 1200px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -131,13 +137,34 @@ h5 {
   }
 }
 
+
+@media screen and (min-width: 1200px) {
+  .container-menu {
+        width: 1200px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .menu-link.responsive {
     border-top: 1px solid rgb(203, 18, 18);
     border-top: 2px solid rgba(203, 18, 18, .8);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+
   }
+
+  .animation-text-first {
+  font-size: 20px !important;
+
+  }
+
+  .animation-text-second {
+  font-size: 10px !important;
+  }
+
+  .container-menu {
+      padding: 0 15px;
+  }
+
   ul.topnav.responsive {
     width: 100%;
     height: 100%;
@@ -190,7 +217,7 @@ ul.topnav li a {
   display: none;
   cursor: pointer;
   z-index: 100;
-  padding-right: 5rem;
+  padding-right: 10%;
   padding-top: 1rem;
   float: right;
 }
@@ -252,10 +279,11 @@ ul.topnav li a {
 .full-box-menu {
   top: 0px;
   width: 100%;
+  min-width: auto;
   height: 80px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 1;
+  z-index: 20;
   -webkit-box-shadow: 2px 4px 13px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 13px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 13px -6px rgba(0, 0, 0, 0.75);
@@ -282,7 +310,6 @@ ul.topnav li a {
 
 .menu-normal {
   z-index: 100;
-  padding-right: 10%;
   padding-top: 27px;
   padding-bottom: 27px;
   float: right;
@@ -316,23 +343,24 @@ ul.topnav li a {
 
 .logobox {
   z-index: 100;
+ width: 10%;
+   float: left ;
 }
 
 .logo {
   height: 80px;
-  width: 150px;
+  /* width: 150px; */
   background-image: url("../img/Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-left: 10em;
   transition-duration: 0.5s;
 }
 
 .logoscroll {
   margin-top: 0%;
   height: 65px;
-  width: 120px;
+  /* width: 120px; */
   transition-duration: 0.5s;
 }
 
@@ -510,10 +538,9 @@ ul.topnav li a {
 .right {float: right !important;}
 /* Image zoom on hover + Overlay colour */
 .parent {
-    width: 45%;
-    margin: 20px;
+    /* margin: 20px; */
+  width: 100%;
     height: 300px;
-
     overflow: hidden;
     position: relative;
     float: left;
@@ -523,7 +550,7 @@ ul.topnav li a {
 
 .child {
     height: 100%;
-    width: 100%;
+        min-width: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all .5s;
@@ -533,7 +560,7 @@ ul.topnav li a {
 }
 
 /* Several different images */
-.bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg);}
+.bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg); background-size: cover;}
 .bg-two {background-image: url(http://s1.it.atcdn.net/wp-content/uploads/2015/08/2-London.jpg);}
 .bg-three {background-image: url(https://media.timeout.com/images/101484105/image.jpg);}
 .bg-four {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg);}
@@ -593,6 +620,9 @@ ul.topnav li a {
 /*--------------------------------------------------------------
 ## What makes us diffrent ?
 --------------------------------------------------------------*/
+@media screen and (max-width: 768px){}
+.different-img {  display: none;}
+}
 .different-img {
   min-height: 300px;
   width: 50%;
@@ -728,6 +758,7 @@ animation-duration: 1.2s !important;
 
 .header-bacground-image1 {
   animation-duration: 0.5s !important;
+      overflow-x: hidden;
   display: block;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servers.jpg');
   background-position: bottom;
@@ -739,6 +770,7 @@ animation-duration: 1.2s !important;
 
 .header-bacground-image2 {
   animation-duration: 0.5s !important;
+      overflow-x: hidden;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servers2.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -807,6 +839,7 @@ animation-duration: 1.2s !important;
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: uppercase;
+    overflow-x: hidden;
 }
 
 .animation-text-second {
@@ -818,14 +851,22 @@ animation-duration: 1.2s !important;
   font-weight: lighter;
   padding: 0 20%;
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 .animation-box {
   position: absolute;
   top: 260px;
-  left: 50%;
-  width: 1170px;
-  margin-left: -585px;
+
+}
+
+@media screen and (min-width: 1200px) {
+  .animation-box {
+        width: 1200px;
+        left: 50%;
+        margin-left: -585px;
+  }
+
 }
 
 /*--------------------------------------------------------------

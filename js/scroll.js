@@ -60,27 +60,38 @@ function SmoothScroll(target, speed, smooth) {
 ## Back to top button
 --------------------------------------------------------------*/
 (function() {
+  var intViewportWidth = window.innerWidth;
+  console.log(intViewportWidth);
   var parallax = document.querySelectorAll(".content-box-parallax"),
     speed = 0.1;
+    window.onscroll = function() {
+      [].slice.call(parallax).forEach(function(el, i) {
 
-  window.onscroll = function() {
-    [].slice.call(parallax).forEach(function(el, i) {
+        if (intViewportWidth > 768) {
+          var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50%" + (-((windowYOffset - 1800) * speed)) + "px";
 
-      var windowYOffset = window.pageYOffset,
-        elBackgrounPos = "50%" + (-((windowYOffset - 1800) * speed)) + "px";
+        }else {
+            speed = 0.2;
+          var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50%" + (-((windowYOffset - 6000) * speed)) + "px";
+        }
 
-      el.style.backgroundPosition = elBackgrounPos;
+        el.style.backgroundPosition = elBackgrounPos;
 
-      var height = $(window).scrollTop();
-      if (height > 800) {
-        $('#back-to-top').fadeIn();
-      } else {
-        $('#back-to-top').fadeOut();
-      }
+        var height = $(window).scrollTop();
+        if (height > 800) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
 
-    });
-  };
+      });
+    };
+  if (intViewportWidth > 768) {
 
+
+  }
 })();
 
 
@@ -226,7 +237,7 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 
 var myIndex = 0;
-if(page === "index.html"){
+if (page === "index.html") {
 
   carousel();
 }
@@ -235,17 +246,13 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-
     x[i].style.display = 'none';
-
 
   }
   myIndex++;
   if (myIndex > x.length) {
     myIndex = 1
   }
-
-  x[myIndex - 1].style.display = 'block';
-
+  x[myIndex - 1].style.overflow = 'hidden';
   setTimeout(carousel, 3000);
 }
