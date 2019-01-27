@@ -28,13 +28,15 @@
           <button class="arrow arrow-left" onclick="plusDivs(-1)">&#10094;</button>
           <button class="arrow arrow-right" onclick="plusDivs(1)">&#10095;</button>
           <div class="animation-box">
-            <div class="animated slideInLeft animation-text-first">
+            <div class="animated fadeInLeft animation-text-first">
               <div class="animated fadeIn">OPIEKA INFORMATYCZNA FIRM
               </div>
             </div>
-            <div class="animated slideInRight animation-text-second">
-              <div class="animated fadeIn">
-                Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+            <div style="overflow-x: hidden;">
+              <div class="animated fadeInRight animation-text-second">
+                <div class="animated fadeIn">
+                  Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+                </div>
               </div>
             </div>
           </div>
@@ -43,40 +45,28 @@
           <button class="arrow arrow-left" onclick="plusDivs(-1)">&#10094;</button>
           <button class="arrow arrow-right" onclick="plusDivs(1)">&#10095;</button>
           <div class="animation-box">
-            <div class="animated slideInLeft animation-text-first">
+            <div class="animated fadeInLeft animation-text-first">
               <div class="animated fadeIn">OPIEKA INFORMATYCZNA FIRM
               </div>
             </div>
-            <div class="animated slideInRight animation-text-second">
-              <div class="animated fadeIn">
-                Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+            <div style="overflow-x: hidden;">
+              <div class="animated fadeInRight animation-text-second">
+                <div class="animated fadeIn">
+                  Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="full-box-menu" id="full-box-menu">
-          <div class="hamburger logobox" id="hamburger" onclick="myHamburger()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <div class="menu-normal" id="top-menu">
-            <ul class="">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">O Nas</a></li>
-              <li><a href="/">Oferta</a></li>
-              <li><a href="/">Referencje</a></li>
-              <li><a href="/">Pomoc zdalna</a></li>
-              <li><a href="/">Kontakt</a></li>
-            </ul>
-          </div>
-          <div class="logobox">
-            <div class="logo" id="logo">
+          <div class="container-menu">
+            <div class="hamburger" id="hamburger" onclick="myHamburger()">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
-          </div>
-          <div id="navigation" class="menu menu-link">
-            <div>
-              <ul class="topnav" id="myTopnav">
+            <div class="menu-normal" id="top-menu">
+              <ul class="">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">O Nas</a></li>
                 <li><a href="/">Oferta</a></li>
@@ -84,6 +74,22 @@
                 <li><a href="/">Pomoc zdalna</a></li>
                 <li><a href="/">Kontakt</a></li>
               </ul>
+            </div>
+            <div class="logobox">
+              <div class="logo" id="logo">
+              </div>
+            </div>
+            <div id="navigation" class="menu menu-link">
+              <div>
+                <ul class="topnav" id="myTopnav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">O Nas</a></li>
+                  <li><a href="/">Oferta</a></li>
+                  <li><a href="/">Referencje</a></li>
+                  <li><a href="/">Pomoc zdalna</a></li>
+                  <li><a href="/">Kontakt</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -184,37 +190,41 @@
         </div>
       </div>
       <div class="content-box-white">
-        <div class="container">
+        <div class="container-fluid">
           <div class="hidden-to-animate">
             <h2>
               REFERENCJE
             </h2>
           </div>
           <div class="under-text"> Sprawdź wybrane opinie na temat naszej pracy </div>
-          <div class="row">
-            <div class="col parent" onclick="">
-              <div class="child bg-one" id="portfolio">
-                <a href="#">Los Angeles</a>
+          <div class="row row-50 justify-content-center justify-content-lg-between" style=" width: 95%;
+    margin: 0 auto;">
+            <div class="col-lg-3 col-md-6">
+              <div class=" parent" onclick="">
+                <div class="child bg-one" id="portfolio">
+                  <a href="#">Los Angeles</a>
+                </div>
               </div>
             </div>
-            <div class="col parent" onclick="">
-              <div class="child bg-two" id="portfolio">
-                <a href="#">London</a>
+            <div class="col-lg-3 col-md-6">
+              <div class=" parent" onclick="">
+                <div class="child bg-two" id="portfolio">
+                  <a href="#">London</a>
+                </div>
               </div>
             </div>
-            <div class="col parent" onclick="">
-              <div class="child bg-three" id="portfolio">
-                <a href="#">New York</a>
+            <div class="col-lg-3 col-md-6 ">
+              <div class=" parent" onclick="">
+                <div class="child bg-three" id="portfolio">
+                  <a href="#">New York</a>
+                </div>
               </div>
             </div>
-            <div class="col parent" onclick="">
-              <div class="child bg-four" id="portfolio">
-                <a href="#">Hollywood</a>
-              </div>
-            </div>
-            <div class="col parent" onclick="">
-              <div class="child bg-five" id="portfolio">
-                <a href="#">Dubai</a>
+            <div class="col-lg-3 col-md-6 ">
+              <div class=" parent" onclick="">
+                <div class="child bg-four" id="portfolio">
+                  <a href="#">Hollywood</a>
+                </div>
               </div>
             </div>
           </div>
@@ -305,7 +315,7 @@
           </div>
           <div class="under-text">Co nasi Klienci o nas mówią</div>
           <!-- need to change this proprty to width 80% and eveywhere  style="margin: auto; width:80%; text-align: center;"  style="max-width: 600px; align-items: center;"-->
-          <div class="row justify-content-center justify-content-lg-between " id="quotes">
+          <div class="row justify-content-center justify-content-lg-between" id="quotes">
             <div class="margin-auto">
               <div class="col">
                 <div class="mySlides animated fadeIn"><i class="fas fa-quote-left"></i> Intuicyjna funkcjonalność systemu pozwala na łatwą i bezproblemową obsługę a stała gotowość pracowników firmy Mospan w pełni zapewnia wsparcie <i class="fas fa-quote-right"></i></div>
