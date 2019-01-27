@@ -149,13 +149,14 @@ $(function() {
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-var myIndex = 0;
-if (page === "index.html") {
-
+if ($('#quotes').length > 0) {
+  var myIndex = 0;
   carousel();
 }
 
+
 function carousel() {
+
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
@@ -166,7 +167,8 @@ function carousel() {
   if (myIndex > x.length) {
     myIndex = 1
   }
-  x[myIndex - 1].style.display = 'block';
+
+  x[myIndex-1].style.display = 'block';
 
   setTimeout(carousel, 3000);
 }
