@@ -77,18 +77,21 @@ function SmoothScroll(target, speed, smooth) {
           elBackgrounPos = "50%" + (-((windowYOffset - 6000) * speed)) + "px";
       }
 
-      el.style.backgroundPosition = elBackgrounPos;
+        el.style.backgroundPosition = elBackgrounPos;
 
-      var height = $(window).scrollTop();
-      if (height > 800) {
-        $('#back-to-top').fadeIn();
-      } else {
-        $('#back-to-top').fadeOut();
-      }
+        var height = $(window).scrollTop();
+        if (height > 800) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
 
-    });
-  };
+      });
+    };
+  if (intViewportWidth > 768) {
 
+
+  }
 })();
 
 
