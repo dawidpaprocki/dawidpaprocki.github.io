@@ -27,13 +27,15 @@
         <button class="arrow arrow-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="arrow arrow-right" onclick="plusDivs(1)">&#10095;</button>
         <div class="animation-box">
-          <div class="animated slideInLeft animation-text-first">
+          <div class="animated fadeInLeft animation-text-first">
             <div class="animated fadeIn">OPIEKA INFORMATYCZNA FIRM
             </div>
           </div>
-          <div class="animated slideInRight animation-text-second">
-            <div class="animated fadeIn">
-              Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+          <div style="overflow-x: hidden;">
+            <div class="animated fadeInRight animation-text-second">
+              <div class="animated fadeIn">
+                Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+              </div>
             </div>
           </div>
         </div>
@@ -42,40 +44,33 @@
         <button class="arrow arrow-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="arrow arrow-right" onclick="plusDivs(1)">&#10095;</button>
         <div class="animation-box">
-          <div class="animated slideInLeft animation-text-first">
+          <div class="animated fadeInLeft animation-text-first">
             <div class="animated fadeIn">OPIEKA INFORMATYCZNA FIRM
             </div>
           </div>
-          <div class="animated slideInRight animation-text-second">
-            <div class="animated fadeIn">
-              Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+          <div style="overflow-x: hidden;">
+            <div class="animated fadeInRight animation-text-second">
+              <div class="animated fadeIn">
+                Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla użytkowników (Helpdesk) oraz administrowania siecią
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="full-box-menu" id="full-box-menu">
-        <div class="hamburger logobox" id="hamburger" onclick="myHamburger()">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <div class="menu-normal" id="top-menu">
-          <ul class="">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">O Nas</a></li>
-            <li><a href="/">Oferta</a></li>
-            <li><a href="/">Referencje</a></li>
-            <li><a href="/">Pomoc zdalna</a></li>
-            <li><a href="/">Kontakt</a></li>
-          </ul>
-        </div>
-        <div class="logobox">
-          <div class="logo" id="logo">
+        <div class="container-menu">
+          <div class="hamburger" id="hamburger" onclick="myHamburger()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-        </div>
-        <div id="navigation" class="menu menu-link">
-          <div>
-            <ul class="topnav" id="myTopnav">
+          <div class="logobox">
+            <div class="logo" id="logo">
+            </div>
+          </div>
+
+          <div class="menu-normal" id="top-menu">
+            <ul class="">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">O Nas</a></li>
               <li><a href="/">Oferta</a></li>
@@ -85,14 +80,24 @@
             </ul>
           </div>
         </div>
+        <div id="navigation" class="menu menu-link">
+          <ul class="topnav" id="myTopnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">O Nas</a></li>
+            <li><a href="/">Oferta</a></li>
+            <li><a href="/">Referencje</a></li>
+            <li><a href="/">Pomoc zdalna</a></li>
+            <li><a href="/">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
     </header>
-    
+
       <div class="content-box-white" id="section1">
-        <div class="container">
+        <div class="container" style="    min-width: 70%;">
           <div class="row row-50 justify-content-center justify-content-lg-between container-mrgin about2">
             <div class="col-8 animated zoomIn" id="about">
-              <h5> Parę słów o nas </h5>
+              <h3> Parę słów o nas </h3>
               <p> <img src="img/Logo.png" alt="OutSourcing IT" height="100" width="190" style="float:left; margin:0.4rem"> już<b> od 7 lat specjalizuje się w kompleksowym wsparciu informatycznym przedsiębiorstw.</b> Naszym przesłaniem jest całościowe podejście
                 do oczekiwań i zadań stawianych nam przez naszych Klientów.</p>
               <p> Zapewniamy przedsiębiorstwom pełną<b> opiekę informatyczną realizowaną w modelu outsourcingowym.</b> Naszym celem jest zabezpieczenie ciągłości pracy oraz bezpieczeństwa systemów informatycznych Klienta.</p>
@@ -139,7 +144,7 @@
 
       <footer id="section3">
         <div class="container">
-          <div class="row container-mrgin">
+          <div class="row container-margin">
             <div class="col">
               <h4> DANE FIRMOWE </h4>
               <p>
