@@ -74,7 +74,7 @@ function SmoothScroll(target, speed, smooth) {
       } else {
         speed = 0.2;
         var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50%" + (-((windowYOffset - 6000) * speed)) + "px";
+          elBackgrounPos = "50%" + (-((windowYOffset - 2200) * speed)) + "px";
       }
 
         el.style.backgroundPosition = elBackgrounPos;
@@ -139,6 +139,7 @@ $(function() {
 
       var navigation = document.getElementById("myTopnav");
       navigation.classList.remove("mobile");
+      
 
       var menu = document.getElementById("top-menu");
       menu.classList.remove("menu-normal-scroll");

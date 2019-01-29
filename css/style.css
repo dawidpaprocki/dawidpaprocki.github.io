@@ -4,7 +4,6 @@ html, body {
   min-width: 100%;
   color: rgb(68, 68, 68);
   font-family: 'Open Sans', sans-serif;
-
 }
 
 p {
@@ -57,7 +56,7 @@ h4 {
 h5 {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
-  color:  rgb(217, 29, 21);
+  color: rgb(217, 29, 21);
   text-align: center;
   margin-bottom: 1.75rem;
 }
@@ -70,11 +69,12 @@ h5 {
   padding: 0px;
 }
 
-.container-menu{
-   overflow: hidden;
+.container-menu {
+  overflow: hidden;
   margin: auto auto;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 .content-box-grey {
   width: 100%;
   height: auto;
@@ -90,7 +90,7 @@ h5 {
   flex-wrap: wrap;
 }
 
-.container-mrgin {
+.container-margin {
   width: 75%;
   margin: 0 auto;
 }
@@ -128,6 +128,7 @@ h5 {
 /*--------------------------------------------------------------
 ## Mobile Menu
 --------------------------------------------------------------*/
+
 @media (max-width: 1200px) {
   #hamburger {
     display: inline-block;
@@ -137,42 +138,39 @@ h5 {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .container-menu {
-        width: 1200px;
+    width: 1200px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .menu-link.responsive {
     border-top: 1px solid rgb(203, 18, 18);
     border-top: 2px solid rgba(203, 18, 18, .8);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-
   }
-
-  #contact .hidden-to-animate-top{
+  .logobox {
+    padding-left: 5% !important;
+  }
+  #contact .hidden-to-animate-top {
     opacity: 1;
   }
-
   .animation-text-first {
-  font-size: 20px !important;
-
+    font-size: 25px !important;
   }
-
   .animation-text-second {
-  font-size: 10px !important;
+    font-size: 15px !important;
+    padding: 0 10% !important;
   }
-
-  .container-menu {
-      padding: 0 15px;
+  .container-margin {
+    width: 100% !important;
   }
-
+  .container-menu {}
   ul.topnav.responsive {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    list-style: none;
+    display: flex;
   }
   ul.topnav.responsive li {
     -webkit-transition-property: height;
@@ -182,18 +180,37 @@ h5 {
     transition-property: height;
     transition-duration: 0.6s;
     height: 50px;
+    width: 100%;
     position: relative;
-  }
-  ul.topnav.responsive li a:hover {
-    background-color: #553;
   }
 }
 
+@media screen and (max-width: 970px) {
+  ul.topnav.responsive {
+          transition-duration: 0.6s;
+    display: block !important;
+  }
+  ul.topnav {
+        transition-duration: 0.6s;
+    display: none !important;
+    overflow: hidden;
+  }
+  ul.topnav.responsive li {
+    -webkit-transition-property: height;
+    /* Safari */
+    -webkit-transition-duration: 0.6s;
+    /* Safari */
+    transition-property: height;
+    transition-duration: 0.6s;
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+
+}
+
 ul.topnav {
-  overflow: hidden;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
   overflow: hidden;
 }
 
@@ -205,15 +222,16 @@ ul.topnav li {
   transition-property: height;
   transition-duration: 0.6s;
   height: 0px;
-  float: left;
-  display: block;
+  width: 100%;
+  position: relative;
 }
 
 ul.topnav li a {
-  display: block;
+  display: flex;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  justify-content: center;
+  /* padding: 14px 16px; */
   text-decoration: none;
 }
 
@@ -225,6 +243,7 @@ ul.topnav li a {
   padding-top: 1rem;
   float: right;
 }
+
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -244,10 +263,8 @@ ul.topnav li a {
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-9px, -6px);
-
   transform: rotate(45deg) translate(-9px, -6px);
 }
-
 
 .container {
   margin: auto;
@@ -280,6 +297,19 @@ ul.topnav li a {
 /*--------------------------------------------------------------
 ## Menu
 --------------------------------------------------------------*/
+
+.menu {
+  right: 0;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  background-color: rgba(255, 255, 255, 0.93);
+  -webkit-box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.75);
+}
+
 .full-box-menu {
   top: 0px;
   width: 100%;
@@ -302,14 +332,9 @@ ul.topnav li a {
   -moz-box-shadow: 2px 4px 13px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 13px -6px rgba(0, 0, 0, 0.75);
 }
+
 .menu-link {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   letter-spacing: 1px;
-  list-style: none;
 }
 
 .menu-normal {
@@ -347,8 +372,8 @@ ul.topnav li a {
 
 .logobox {
   z-index: 100;
- width: 10%;
-   float: left ;
+  width: 10%;
+  float: left;
 }
 
 .logo {
@@ -410,6 +435,7 @@ ul.topnav li a {
   padding: 0 10px;
   color: #2b2b2b;
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 #navigation ul li a.active {
@@ -426,7 +452,7 @@ ul.topnav li a {
 ## About us section
 --------------------------------------------------------------*/
 
-.about2 p{
+.about2 p {
   margin-bottom: 30px !important;
 }
 
@@ -437,6 +463,7 @@ ul.topnav li a {
   color: #7a7a7a;
   font-weight: 400;
 }
+
 #about b {
   color: #ff9900;
 }
@@ -503,6 +530,7 @@ ul.topnav li a {
 /*--------------------------------------------------------------
 ## What we do?
 --------------------------------------------------------------*/
+
 .service {
   background-image: url("../img/icon/customer-service.png");
 }
@@ -527,11 +555,11 @@ ul.topnav li a {
   color: rgb(55, 152, 217);
 }
 
-.what-we-do a{
+.what-we-do a {
   color: rgb(68, 68, 68);
 }
 
-.what-we-do p{
+.what-we-do p {
   text-align: center;
 }
 
@@ -539,94 +567,126 @@ ul.topnav li a {
 ## Portfolio
 --------------------------------------------------------------*/
 
-.right {float: right !important;}
+.right {
+  float: right !important;
+}
+
 /* Image zoom on hover + Overlay colour */
+
 .parent {
-    /* margin: 20px; */
+  /* margin: 20px; */
   width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    display: inline-block;
-	cursor: pointer;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .child {
-    height: 100%;
-        min-width: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  height: 100%;
+  min-width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 /* Several different images */
-.bg-one {background-image: url(https://media.timeout.com/images/101602611/image.jpg); background-size: cover;}
-.bg-two {background-image: url(http://s1.it.atcdn.net/wp-content/uploads/2015/08/2-London.jpg);}
-.bg-three {background-image: url(https://media.timeout.com/images/101484105/image.jpg);}
-.bg-four {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg);}
-.bg-five {background-image: url(http://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc);}
-.bg-six {background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);}
 
+.bg-one {
+  background-image: url(https://media.timeout.com/images/101602611/image.jpg);
+  background-size: cover;
+}
 
- #portfolio a {
-    display: none;
-    font-size: 35px;
-    color: #ffffff !important;
-    font-family: sans-serif;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
-    /*text-decoration: none;*/
+.bg-two {
+  background-image: url(http://s1.it.atcdn.net/wp-content/uploads/2015/08/2-London.jpg);
+}
+
+.bg-three {
+  background-image: url(https://media.timeout.com/images/101484105/image.jpg);
+}
+
+.bg-four {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg);
+}
+
+.bg-five {
+  background-image: url(http://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc);
+}
+
+.bg-six {
+  background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);
+}
+
+#portfolio a {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  /*text-decoration: none;*/
 }
 
 .parent:hover .child, .parent:focus .child {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
- .parent:hover .child:before, .parent:focus .child:before {
-    display: block;
+.parent:hover .child:before, .parent:focus .child:before {
+  display: block;
 }
 
- .parent:hover #portfolio a, .parent:focus #portfolio  a {
-    display: block;
+.parent:hover #portfolio a, .parent:focus #portfolio a {
+  display: block;
 }
+
 .child:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(1, 1, 1, 0.8);
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 1, 1, 0.8);
 }
 
 /* Media Queries */
- @media screen and (max-width: 960px) {
-    .parent {width: 100%; margin: 20px 0px}
 
+@media screen and (max-width: 960px) {
+  .parent {
+    width: 100%;
+    margin: 20px 0px
+  }
 }
 
 /*--------------------------------------------------------------
 ## What makes us diffrent ?
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px){}
-.different-img {  display: none;}
+
+@media screen and (max-width: 768px) {}
+
+.different-img {
+  display: none;
 }
+
+}
+
 .different-img {
   min-height: 300px;
   width: 50%;
@@ -723,13 +783,13 @@ ul.topnav li a {
 --------------------------------------------------------------*/
 
 .mySlides {
-animation-duration: 1.2s !important;
+  animation-duration: 1.2s !important;
 }
 
 @keyframes opac {
-100% {
-  opacity: 1;
-}
+  100% {
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -741,9 +801,10 @@ animation-duration: 1.2s !important;
   text-align: center;
 }
 
-.margin-auto{
-    margin: auto;
+.margin-auto {
+  margin: auto;
 }
+
 #quotes i {
   margin-right: 8px;
   margin-left: 8px;
@@ -762,7 +823,7 @@ animation-duration: 1.2s !important;
 
 .header-bacground-image1 {
   animation-duration: 0.5s !important;
-      overflow-x: hidden;
+  overflow-x: hidden;
   display: block;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servers.jpg');
   background-position: bottom;
@@ -774,7 +835,7 @@ animation-duration: 1.2s !important;
 
 .header-bacground-image2 {
   animation-duration: 0.5s !important;
-      overflow-x: hidden;
+  overflow-x: hidden;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servers2.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -843,7 +904,7 @@ animation-duration: 1.2s !important;
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: uppercase;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .animation-text-second {
@@ -859,18 +920,18 @@ animation-duration: 1.2s !important;
 }
 
 .animation-box {
+  width: 100%;
   position: absolute;
   top: 260px;
-
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
   .animation-box {
-        width: 1200px;
-        left: 50%;
-        margin-left: -585px;
+    width: 1200px;
+    left: 50%;
+    margin-left: -585px;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -922,23 +983,23 @@ footer p {
 /*--------------------------------------------------------------
 ## About.html text field
 --------------------------------------------------------------*/
-.text-box{
+
+.text-box {
   padding: 30px;
 }
 
-.text-box h3{
-    font-size: 1.4rem;
-
+.text-box h3 {
+  font-size: 1.4rem;
 }
 
-.text-box h3:after{
+.text-box h3:after {
   content: "";
-position: absolute;
-left: 0;
-top: 100%;
-width: 30px;
-background: rgb(217, 29, 21);
-height: 2px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 30px;
+  background: rgb(217, 29, 21);
+  height: 2px;
 }
 
 #back-to-top {
@@ -952,11 +1013,11 @@ height: 2px;
   background-color: rgb(217, 29, 21);
   color: white;
   cursor: pointer;
-  padding:5px 12px;
+  padding: 5px 12px;
   border-radius: 4px;
-
 }
-#back-to-top i{
+
+#back-to-top i {
   font-size: 1.5rem;
 }
 
