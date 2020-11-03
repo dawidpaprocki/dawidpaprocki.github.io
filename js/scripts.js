@@ -228,7 +228,7 @@ function slider() {
     topSliderIndex = 1
   }
   x[topSliderIndex - 1].style.display = 'block';
-  setTimeout(slider, 3000);
+  setTimeout(slider, 30000);
 }
 
 function plusDivs(n) {
