@@ -12,7 +12,14 @@ function config($key = '')
         'site_url' => '',
         'pretty_uri' => true,
         'nav_menu' => [
-            '' => 'Home',
+            'home' => 'STRONA GŁÓWNA',
+            'service' => 'ŚWIADCZONE USŁUGI',
+            'cities' => 'OBSŁUGIWANE MIASTA',
+            'help' => 'Pomoc zdalna',
+            'about' => 'O Nas',
+            'contact' => 'Kontakt',
+        ],
+        'city_menu' => [
             'home' => 'STRONA GŁÓWNA',
             'service' => 'ŚWIADCZONE USŁUGI',
             'cities' => 'OBSŁUGIWANE MIASTA',

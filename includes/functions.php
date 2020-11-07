@@ -27,10 +27,10 @@ function site_version()
 /**
  * Website navigation.
  */
-function nav_menu()
+function nav_menu($menuName)
 {
     $nav_menu = '';
-    $nav_items = config('nav_menu');
+    $nav_items = config($menuName);
     
     foreach ($nav_items as $uri => $name) {
         $query_string = str_replace('page=', '', $_SERVER['QUERY_STRING'] ?? '');
@@ -44,7 +44,13 @@ function nav_menu()
 
     echo trim($nav_menu);
 }
+function custom_link($name, $uri){
+    $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
 
+    // Add nav item to list. See the dot in front of equal sign (.=)
+    $link = '<a href="' . $url .'">' . $name . '</a>';
+    echo trim($link);
+}
 /**
  * Displays page title. It takes the data from
  * URL, it replaces the hyphens with spaces and
@@ -70,8 +76,11 @@ function page_content()
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.phtml';
     }
-
-    echo file_get_contents($path);
+    ob_start();
+    include($path);
+    $output = ob_get_contents();
+    ob_end_clean();
+    echo $output;
 }
 
 /**

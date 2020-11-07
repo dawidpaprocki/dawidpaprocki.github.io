@@ -1,3 +1,14 @@
+<style>.tick-ul ul {
+        list-style: none;
+    }
+
+    .tick-ul ul li:before {
+        color: red;
+        font-weight: bolder;
+        content: '✓';
+        padding-right: 5px;
+    }</style>
+
 <button id="back-to-top" title="Go to top"><i class="fas fa-angle-up"></i></button>
 
 <header class=" dotted">
@@ -42,26 +53,14 @@
 <div class="content-box-white" id="section1">
     <div class="container" style="    min-width: 70%;">
         <div class="row row-50 justify-content-center justify-content-lg-between container-mrgin about2">
-            <div class="col-8 animated zoomIn" id="about">
-                <h3> Parę słów o nas </h3>
-                <p><img src="../web/img/Logo.png" alt="OutSourcing IT" height="100" width="190"
-                        style="float:left; margin:0.4rem"> już<b> od 7 lat specjalizuje się w kompleksowym wsparciu
-                        informatycznym przedsiębiorstw.</b> Naszym przesłaniem jest całościowe podejście
-                    do oczekiwań i zadań stawianych nam przez naszych Klientów.</p>
-                <p> Zapewniamy przedsiębiorstwom pełną<b> opiekę informatyczną realizowaną w modelu outsourcingowym.</b>
-                    Naszym celem jest zabezpieczenie ciągłości pracy oraz bezpieczeństwa systemów informatycznych
-                    Klienta.</p>
-                <p> Jako firma informatyczna świadczymy również profesjonalne wsparcie w zakresie rozwiązań systemowych
-                    dla biznesu.
-                    <b> Specjalizujemy się w projektowaniu i wdrażaniu systemów informatycznych na indywidualne
-                        zamówienie Klienta.</b> W tym celu stworzyliśmy autorską platformę Prelude BPM®, która jest
-                    niezawodnym narzędziem pozwalającym na modelowanie
-                    dowolnych procesów zachodzących w organizacji.</p>
-                <p> MOSPAN zajmuje się ponadto
-                    <b> dostawą profesjonalnego sprzętu IT.</b> W tym celu współpracujemy z czołowymi producentami
-                    komputerów, podzespołów, urządzeń peryferyjnych oraz infrastruktury sieciowej.
-                    <b> Jesteśmy m.in. wyłącznym dystrybutorem na Polskę firmy ICY DOCK®</b> – renomowanego producenta
-                    urządzeń pamięci masowych i archiwizacji danych. </p>
+            <div class="col-8 animated zoomIn tick-ul" id="about" style="text-align: justify;">
+                <h1> Jaworzno </h1>
+            <p>
+                Firma VeriCom oferuje usługi informatyczne dla firm w Jaworznie. To świetna propozycja dla przedsiębiorców, którzy w ramach swojej działalności powszechnie wykorzystują komputery i ich możliwości. Trzeba się jednak liczyć z tym, że takie urządzenia w niektórych sytuacjach mogą ulec uszkodzeniu. Jeśli do takiej sytuacji dojdzie to warto będzie się zdecydować wtedy na pomoc ze strony VeriCom, firmy której pracownicy będą w stanie sprawnie zareagować i usunąć problemy techniczne dotyczące danego sprzętu.            </p>
+                <h2>Doświadczenie w obsłudze IT firm w Jaworznie</h2>
+                <p>
+                    Jeśli chodzi o outsourcing IT w Jaworznie firma VeriCom oferuje sprawne działania i profesjonalne podejście do każdej firmy, którą będzie się zajmować, dlatego można liczyć na sprawną obsługę i szybką realizację usług w zakresie usuwania potencjalnych awarii, które na danym sprzęcie będą się pojawiać. Warto o tym pamiętać i faktycznie z takich możliwości skorzystać. Będzie to dla wielu firm rozwiązanie lepsze niż zatrudnienie specjalisty z branży IT na stałe.                </p>
+               <?php include("city-common.phtml"); ?>
             </div>
             <div class="col-4">
                 <div class="text-box">
@@ -96,4 +95,3 @@
         </div>
     </div>
 </div>
-

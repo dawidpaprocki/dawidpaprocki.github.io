@@ -1,3 +1,14 @@
+<style>.tick-ul ul {
+        list-style: none;
+    }
+
+    .tick-ul ul li:before {
+        color: red;
+        font-weight: bolder;
+        content: '✓';
+        padding-right: 5px;
+    }</style>
+
 <button id="back-to-top" title="Go to top"><i class="fas fa-angle-up"></i></button>
 
 <header class=" dotted">
@@ -42,26 +53,16 @@
 <div class="content-box-white" id="section1">
     <div class="container" style="    min-width: 70%;">
         <div class="row row-50 justify-content-center justify-content-lg-between container-mrgin about2">
-            <div class="col-8 animated zoomIn" id="about">
-                <h3> Parę słów o nas </h3>
-                <p><img src="../web/img/Logo.png" alt="OutSourcing IT" height="100" width="190"
-                        style="float:left; margin:0.4rem"> już<b> od 7 lat specjalizuje się w kompleksowym wsparciu
-                        informatycznym przedsiębiorstw.</b> Naszym przesłaniem jest całościowe podejście
-                    do oczekiwań i zadań stawianych nam przez naszych Klientów.</p>
-                <p> Zapewniamy przedsiębiorstwom pełną<b> opiekę informatyczną realizowaną w modelu outsourcingowym.</b>
-                    Naszym celem jest zabezpieczenie ciągłości pracy oraz bezpieczeństwa systemów informatycznych
-                    Klienta.</p>
-                <p> Jako firma informatyczna świadczymy również profesjonalne wsparcie w zakresie rozwiązań systemowych
-                    dla biznesu.
-                    <b> Specjalizujemy się w projektowaniu i wdrażaniu systemów informatycznych na indywidualne
-                        zamówienie Klienta.</b> W tym celu stworzyliśmy autorską platformę Prelude BPM®, która jest
-                    niezawodnym narzędziem pozwalającym na modelowanie
-                    dowolnych procesów zachodzących w organizacji.</p>
-                <p> MOSPAN zajmuje się ponadto
-                    <b> dostawą profesjonalnego sprzętu IT.</b> W tym celu współpracujemy z czołowymi producentami
-                    komputerów, podzespołów, urządzeń peryferyjnych oraz infrastruktury sieciowej.
-                    <b> Jesteśmy m.in. wyłącznym dystrybutorem na Polskę firmy ICY DOCK®</b> – renomowanego producenta
-                    urządzeń pamięci masowych i archiwizacji danych. </p>
+            <div class="col-8 animated zoomIn tick-ul" id="about" style="text-align: justify;">
+                <h1> Gliwice </h1>
+            <p>
+                Problemy ze sprzętem komputerowym w firmie mogą doprowadzić do wielu różnych problemów jeśli chodzi o prowadzenie działalności. Jednak nadal chodzi tutaj o sprzęty, które ze względu na swoją naturę mogą ulegać uszkodzeniom. Dlatego każdy przedsiębiorca powinien być na tą sytuację przygotowany i mieć specjalistów, którzy będą w stanie szybko sprzęt komputerowy doprowadzić w firmie do porządku. Obecnie usługi informatyczne dla firm w Gliwicach to świetna oferta przygotowana przez firmę VeriCom, która zajmuje się kompleksową obsługą przedsiębiorców w tym zakresie gwarantując sprawną reakcję na pojawiające się problemy techniczne.
+            </p>
+                <h2>Zewnętrzna obsługa IT dla firm Gliwice</h2>
+                <p>
+                    Wydaje się, że to właśnie outsourcing IT dla firm w Gliwicach będzie najlepszym rozwiązaniem, ponieważ w takiej sytuacji oddaje się firmę w dobre ręce specjalistów, którzy będą w stanie zagwarantować sprawną obsługę wszystkich problemów związanych ze sprzętem komputerowym w firmie. Warto z takich możliwości skorzystać ponieważ będzie to kompleksowa obsługa ze, a koszty będą niższe niż tworzenie działu IT w firmie.
+                </p>
+               <?php include("city-common.phtml"); ?>
             </div>
             <div class="col-4">
                 <div class="text-box">
@@ -96,4 +97,3 @@
         </div>
     </div>
 </div>
-

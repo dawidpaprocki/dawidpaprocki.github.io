@@ -16,13 +16,11 @@ a:hover {
 }
 
 h1 {
-  transform: scaleY(1.2);
-  text-decoration: none;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
   text-align: center;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -964,20 +962,6 @@ ul.topnav li a {
   margin-left: 2%;
 }
 
-/*--------------------------------------------------------------
-## Service
---------------------------------------------------------------*/
-
-.tick-ul ul {
-  list-style: none;
-}
-
-.tick-ul ul li:before {
-  color: red;
-  font-weight: bolder;
-  content: '✓';
-  padding-right: 5px;
-}
 
 /*--------------------------------------------------------------
 ## Footer
