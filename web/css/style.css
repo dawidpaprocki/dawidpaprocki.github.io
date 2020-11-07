@@ -302,12 +302,6 @@ ul.topnav li a {
   padding: auto;
 }
 
-, on ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 #section3 p {
   color: #ffffff;
 }
@@ -968,6 +962,21 @@ ul.topnav li a {
 .col-right {
   padding-top: 1%;
   margin-left: 2%;
+}
+
+/*--------------------------------------------------------------
+## Service
+--------------------------------------------------------------*/
+
+.tick-ul ul {
+  list-style: none;
+}
+
+.tick-ul ul li:before {
+  color: red;
+  font-weight: bolder;
+  content: '✓';
+  padding-right: 5px;
 }
 
 /*--------------------------------------------------------------

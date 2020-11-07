@@ -12,7 +12,7 @@ function SmoothScroll(target, speed, smooth) {
   target.addEventListener('DOMMouseScroll', scrolled, false)
 
   function scrolled(e) {
-    e.preventDefault(); // disable default scrolling
+    // e.preventDefault(); // disable default scrolling
 
     var delta = normalizeWheelDelta(e)
 

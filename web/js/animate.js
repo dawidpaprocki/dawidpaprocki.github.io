@@ -697,7 +697,7 @@ $(window).scroll(function() {
   }
 
   if (typeof define === 'function' && define.amd) {
-    define(['jquery'], function() {
+    define(['web/js/jquery'], function() {
       return Odometer;
     });
   } else if (typeof exports !== "undefined" && exports !== null) {
