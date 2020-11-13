@@ -1,8 +1,22 @@
 function init() {
   new SmoothScroll(document, 150, 10)
 }
-var pos;
+$(document).ready(function(){
 
+  $("#carousel").owlCarousel({
+    autoplay: true,
+    lazyLoad: true,
+    rewind: true,
+    loop:true,
+    margin:10,
+    autoPlay: 3000,
+    itemsDesktop:[1600, 4],
+    // itemsDesktopSmall:[1300,3],
+    itemsTablet:[1300, 2],
+    itemsMobile:[750, 1]
+  })
+});
+var pos;
 function SmoothScroll(target, speed, smooth) {
   if (target == document)
     target = (document.documentElement || document.body.parentNode || document.body) // cross browser support for document scrolling
@@ -160,6 +174,7 @@ function carousel() {
 
   var i;
   var x = document.getElementsByClassName("mySlides");
+  console.log(x);
   for (i = 0; i < x.length; i++) {
     x[i].style.display = 'none';
 

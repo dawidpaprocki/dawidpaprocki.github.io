@@ -1,5 +1,18 @@
+<style>
+    .form input[type=text], .form input[type=email], .form textarea {
+        background-color: rgba(102, 102, 102,  0.08);
+    }
+    .form label {
+        color: rgb(102 102 102);
+    }
+    .thumb-small {
+            color: rgb(217, 29, 21);;
+    }
+    .grey-contact a{
+        color:  rgb(95, 95, 97)!important;
+    }
+</style>
 <button id="back-to-top" title="Go to top"><i class="fas fa-angle-up"></i></button>
-
 <header class=" dotted">
     <div class="full-box header-bacground-image1 animated fadeInSlider headers">
         <button class="arrow arrow-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -12,8 +25,7 @@
             <div style="overflow-x: hidden;">
                 <div class="animated fadeInRight animation-text-second">
                     <div class="animated fadeIn">
-                        Zapewniamy kompleksowe wsparcie w zakresie opieki nad sprzętem IT, bieżącej pomocy dla
-                        użytkowników (Helpdesk) oraz administrowania siecią
+                        Masz już dosyć stresów i zastojów w pracy spowodowanych awaryjnością sprzętu w Twojej firmie? Jeśli tak, to znalazłeś się we właściwym miejscu!
                     </div>
                 </div>
             </div>
@@ -39,59 +51,67 @@
     </div>
 </header>
 
-<div class="content-box-white" id="section1">
-    <div class="container" style="    min-width: 70%;">
-        <div class="row row-50 justify-content-center justify-content-lg-between container-mrgin about2">
-            <div class="col-8 animated zoomIn" id="about">
-                <h3> Parę słów o nas </h3>
-                <p><img src="../web/img/Logo.png" alt="OutSourcing IT" height="100" width="190"
-                        style="float:left; margin:0.4rem"> już<b> od 7 lat specjalizuje się w kompleksowym wsparciu
-                        informatycznym przedsiębiorstw.</b> Naszym przesłaniem jest całościowe podejście
-                    do oczekiwań i zadań stawianych nam przez naszych Klientów.</p>
-                <p> Zapewniamy przedsiębiorstwom pełną<b> opiekę informatyczną realizowaną w modelu outsourcingowym.</b>
-                    Naszym celem jest zabezpieczenie ciągłości pracy oraz bezpieczeństwa systemów informatycznych
-                    Klienta.</p>
-                <p> Jako firma informatyczna świadczymy również profesjonalne wsparcie w zakresie rozwiązań systemowych
-                    dla biznesu.
-                    <b> Specjalizujemy się w projektowaniu i wdrażaniu systemów informatycznych na indywidualne
-                        zamówienie Klienta.</b> W tym celu stworzyliśmy autorską platformę Prelude BPM®, która jest
-                    niezawodnym narzędziem pozwalającym na modelowanie
-                    dowolnych procesów zachodzących w organizacji.</p>
-                <p> MOSPAN zajmuje się ponadto
-                    <b> dostawą profesjonalnego sprzętu IT.</b> W tym celu współpracujemy z czołowymi producentami
-                    komputerów, podzespołów, urządzeń peryferyjnych oraz infrastruktury sieciowej.
-                    <b> Jesteśmy m.in. wyłącznym dystrybutorem na Polskę firmy ICY DOCK®</b> – renomowanego producenta
-                    urządzeń pamięci masowych i archiwizacji danych. </p>
+<div class="content-box-white">
+    <div class="container animated zoomIn" style="    min-width: 70%;">
+        <div class="row row-50 justify-content-center justify-content-lg-between container-margin"
+             style="padding-top: 3%;">
+            <div class="col-md-12 col-lg-12 col-xs-12">
+                <h2 style="color: rgb(217, 29, 21);">SKONTAKTUJ SIĘ Z NAMI</h2>
+                <div class="under-text" style="font-size: 1.0rem;">Będzie nam miło porozmawiać z Państwem
+                </div>
             </div>
-            <div class="col-4">
-                <div class="text-box">
-                    <h3> Adres </h3>
-                    <p>
-                        VERICOM <br> ul. Parkowa 53 /2 <br> 41-303 Dąbrowa Górnicza
-                    </p>
-                    <p>
-                        NIP: 6292075389<br> REGON: 241660764
-                    </p>
+        </div>
+        <div class="row container-margin">
+            <div class="col col-left">
+                <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+                    <div class="form-row">
+                        <label for="field-name">Imię i nazwisko (wymagane)</label>
+                        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+                               pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-email">Adres email (wymagane)</label>
+                        <input type="email" name="email" required id="field-email"
+                               data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-message">Treść wiadomości</label>
+                        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+                                  pattern=".+">...</textarea>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-cnt">
+                            <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+                            <i class="state" aria-hidden="true"></i>
+                            <span>Wyrażam zgodę na używanie przez Trust IT Sp. z.o.o., z siedzibą przy ul. Wróblewskiego 18/103, 93-578 Łódź, telekomunikacyjnych urządzeń końcowych, których jestem użytkownikiem, dla celów marketingu bezpośredniego zgodnie z art. 172 ustawy z dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz.U. 2004 nr 171 poz. 1800).*</span>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">Wyślij</button>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lf79X8UAAAAAFk3oL6KKWfTyRoZSpwLiPtiSJzm">??</div>
+                </form>
+            </div>
+            <div class="col col-right grey-contact">
+                <p>Dane kontaktowe:</P>
+                <div class="thumb-small">
+                    <i class="fas fa-map-marker-alt" style="-webkit-font-smoothing: antialiased;"></i>
                 </div>
-                <div class="text-box">
-                    <h3> Telefon i fax </h3>
-                    <p>
-                        +48 502 481 334</br>
-                        +48 503 757 557
-                    </p>
+                <p>Adres: <a href="https://www.google.com/maps/place/Parkowa+53,+41-303+Dąbrowa+Górnicza/">Parkowa 53 /2 </a></P>
+                <div class="thumb-small">
+                    <i class="fa fa-phone" style="-webkit-font-smoothing: antialiased;"></i>
                 </div>
-                <div class="text-box">
-                    <h3> E-mail </h3>
-                    <p>
-                        biuro@vericom.pl
-                    </p>
+                <p>Telefon:   <a href="tel:+48 503 757 557">+48 503 757 557</a>, <a href="tel:+48 502 481 334">+48 502 481 334</a></P>
+                <div class="thumb-small">
+                    <i class="fas fa-envelope" style="-webkit-font-smoothing: antialiased;"></i>
                 </div>
-                <div class="text-box">
-                    <h3> Facebook </h3>
-                    <p>
-                        facebook.com/vericom
-                    </p>
+                <p>   <a href="mailto:biuro@vericom.pl">biuro@vericom.pl</a></P>
+                <div class="thumb-small">
+                    <i class="fas fa-globe-americas" style="-webkit-font-smoothing: antialiased;"></i>
                 </div>
+                <p>Witryna: <a href="http://vericom.pl">vericom.pl</a></P>
+                <p>NIP: 6292075389:</P>
+                <p>REGON: 241660764</P>
             </div>
         </div>
     </div>

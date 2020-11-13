@@ -35,17 +35,17 @@ $(window).scroll(function() {
   $('.odometer').each(function() {
     if (isScrolledIntoView(this) === true) {
       setTimeout(function() {
-        odometer1.innerHTML = 560;
+        odometer1.innerHTML = 260;
       }, 00);
       odometer2
       setTimeout(function() {
-        odometer2.innerHTML = 450;
+        odometer2.innerHTML = 50;
       }, 400);
       setTimeout(function() {
-        odometer3.innerHTML = 21;
+        odometer3.innerHTML = 350;
       }, 600);
       setTimeout(function() {
-        odometer4.innerHTML = 10;
+        odometer4.innerHTML = 15;
       }, 800);
     }
   });

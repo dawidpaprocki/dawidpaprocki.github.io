@@ -23,7 +23,6 @@ function site_version()
 {
     echo config('version');
 }
-
 /**
  * Website navigation.
  */
@@ -35,11 +34,18 @@ function nav_menu($menuName)
     foreach ($nav_items as $uri => $name) {
         $query_string = str_replace('page=', '', $_SERVER['QUERY_STRING'] ?? '');
         $class = $query_string == $uri ? ' active' : '';
-        $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-
-        // Add nav item to list. See the dot in front of equal sign (.=)
-        $nav_menu .= '<li><a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' .
-            '</li>';
+//        if($uri === "help"){
+//            https://get.teamviewer.com/wdtvy83
+//            $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+//            // Add nav item to list. See the dot in front of equal sign (.=)
+//            $nav_menu .= '<li><a href="https://get.teamviewer.com/wdtvy83" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' .
+//                '</li>';
+//        }else {
+            $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+            // Add nav item to list. See the dot in front of equal sign (.=)
+            $nav_menu .= '<li><a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' .
+                '</li>';
+//        }
     }
 
     echo trim($nav_menu);
