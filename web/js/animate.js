@@ -7,7 +7,7 @@ function isScrolledIntoView(elem) {
   var TopOfElement = $(elem).offset().top;
   // Get coordinates of element relative to the document.
   var BotOfElement = TopOfElement + $(elem).height();
-  return ((BotOfElement <= BotViewPort) && (TopOfElement >= TopViewPort));
+  return ((TopOfElement <= BotViewPort));
 }
 // Now to add the functions once viewport is active
 $(window).scroll(function() {
@@ -29,15 +29,18 @@ $(window).scroll(function() {
     }
   });
 
-
+  $('.hidden-to-animate-zoom').each(function() {
+    if (isScrolledIntoView(this) === true) {
+      $(this).addClass('animated zoomIn')
+    }
+  });
 
   Odometer.init();
   $('.odometer').each(function() {
     if (isScrolledIntoView(this) === true) {
       setTimeout(function() {
         odometer1.innerHTML = 260;
-      }, 00);
-      odometer2
+      });
       setTimeout(function() {
         odometer2.innerHTML = 50;
       }, 400);

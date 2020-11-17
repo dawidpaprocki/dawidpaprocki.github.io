@@ -162,7 +162,7 @@ function myHamburger() {
 --------------------------------------------------------------*/
 $(document).ready(function() {
 
-  $('#example-1').progress_fnc();
+  // $('#example-1').progress_fnc();
 
 });
 

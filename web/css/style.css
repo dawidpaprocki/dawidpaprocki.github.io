@@ -406,7 +406,7 @@ ul.topnav li a {
 }
 
 .logo {
-    height: 105px;
+    height: 150px;
     width: 150px;
     background-image: url("../img/logoVericom.png");
     background-size: contain;
@@ -417,7 +417,7 @@ ul.topnav li a {
 
 .logoscroll {
     margin-top: 0%;
-    height: 65px;
+    height: 100px;
     /* width: 120px; */
     transition-duration: 0.5s;
 }
@@ -617,7 +617,6 @@ ul.topnav li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 400px;
 }
 
 .city {
@@ -774,8 +773,7 @@ ul.topnav li a {
 
 @media screen and (max-width: 768px) {
 
-
-    .img-mobile-hidden {
+    .mobile-hidden {
         display: none;
     }
 
@@ -979,7 +977,6 @@ ul.topnav li a {
     margin: auto;
     min-height: 500px;
     min-width: auto;
-    -webkit-box-reflect: right ;
     box-reflect: below
 }
 
